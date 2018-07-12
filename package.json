@@ -1,0 +1,24 @@
+{
+  "name": "mongoose-manytomany",
+  "version": "1.0.0",
+  "description": "tis is mongoose test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htsmartlabs/mongoose-manytomany.git"
+  },
+  "author": "tapas mandal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/htsmartlabs/mongoose-manytomany/issues"
+  },
+  "homepage": "https://github.com/htsmartlabs/mongoose-manytomany#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.3"
+  }
+}
