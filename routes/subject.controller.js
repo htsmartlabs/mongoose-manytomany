@@ -5,7 +5,7 @@ const Subject = require('../model/subject.model');
 
 router.get('/',(req,res,next)=>{
     Subject.find()
-    .populate('students')
+    .populate({path:'students',populate:{path:'books'}})
     .exec()
     .then(data=>{
         res.send(data);

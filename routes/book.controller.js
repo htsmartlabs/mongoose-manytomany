@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-const Student = require('../model/student.model');
+const Book = require('../model/book.model');
 
 router.get('/',(req,res,next)=>{
-    Student.find()
+    Book.find()
     .exec()
     .then(data=>{
         res.send(data);
@@ -13,13 +13,12 @@ router.get('/',(req,res,next)=>{
 });
 
 router.post('/',(req,res,next)=>{
-    const student = new Student({
-        name: req.body.name,
-        books: req.body.books
+    const book = new Book({
+        name: req.body.name
     });
-    student.save()
+    book.save()
     .then(data =>{
-        res.json({ status : true , message : "Student Added Successfully" });
+        res.json({ status : true , message : "Book Added Successfully" });
     })
     .catch(next);
 });

@@ -3,9 +3,9 @@ const mongoose = require('../config/database.config');
 
 const studentSchema = mongoose.Schema({
     name:{type:String},
-    subjects:[{
+    books:[{
         type: mongoose.Schema.Types.ObjectId,
-       ref:'subject'
+       ref:'book'
     }]
 });
 
